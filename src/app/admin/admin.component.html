@@ -1,0 +1,15 @@
+<div class="admin-holder">
+    <form (ngSubmit)=onSubmit() name="addMarker" #newMarker="ngForm">
+    <label>title:
+      <input [(ngModel)]='item.title' placeholder="title" name="title">
+    </label>
+    <label>latitude:
+        <input [(ngModel)]='item.lat'  placeholder="latitude" name="lat">
+    </label>
+    <label>longitude:
+        <input [(ngModel)]='item.lng' placeholder="longitude" name="lng">
+    </label>
+    <input type="submit" value="submit">
+    </form>
+    <!-- {{ newMarker.value | json}} -->
+  </div>
