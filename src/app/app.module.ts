@@ -9,18 +9,24 @@ import { environment } from '../environments/environment';
 import { MarkersComponent } from './markers/markers.component';
 import { DataService } from './services/data.service';
 import { AdminComponent } from './admin/admin.component';
+import { AgmCoreModule } from '@agm/core';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MarkersComponent,
-    AdminComponent
+    AdminComponent,
+    MapComponent
   ],
   imports: [ 
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
-    FormsModule
+    FormsModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDqUl59BPah8bU42xoC81qknTMJofpeask'
+    })
   ],
   providers: [DataService,AngularFirestore],
   bootstrap: [AppComponent]
