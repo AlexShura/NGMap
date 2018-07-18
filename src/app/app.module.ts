@@ -11,6 +11,8 @@ import { DataService } from './services/data.service';
 import { AdminComponent } from './admin/admin.component';
 import { AgmCoreModule } from '@agm/core';
 import { MapComponent } from './map/map.component';
+import { GoogleMapsAPIWrapper } from '@agm/core';
+import { MarkerManager } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,7 @@ import { MapComponent } from './map/map.component';
       apiKey: 'AIzaSyDqUl59BPah8bU42xoC81qknTMJofpeask'
     })
   ],
-  providers: [DataService,AngularFirestore],
+  providers: [DataService,AngularFirestore,GoogleMapsAPIWrapper,MarkerManager],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
