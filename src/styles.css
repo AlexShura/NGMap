@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+app-admin{
+    position: absolute;
+    z-index: 1;
+    top: 1rem;
+    left: 2rem;
+}
+app-markers{
+    position: absolute;
+    z-index: 1;
+    top: 4rem;
+    left: 2rem;
+}
