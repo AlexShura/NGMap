@@ -1,6 +1,6 @@
 <div *ngIf="items?.length > 0;else noItems">
   <ul *ngFor="let item of items" class="collection">  
-    <li>{{ [item.title, item.lat, item.lng] }}</li>
+    <li>{{ [item.title, item.lat, item.lng, item.parrentId] }}</li>
   </ul>
 </div>
 <agm-marker *ngFor="let item of items" [latitude]="+item.lat" [longitude]="+item.lng"></agm-marker>

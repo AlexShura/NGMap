@@ -12,7 +12,7 @@ export class MarkersComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    this.dataService.getItems().subscribe(items => {
+    this.dataService.getItems('markers').subscribe(items => {
       //console.log(items);
       this.items =items;
     });

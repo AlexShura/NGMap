@@ -8,6 +8,15 @@ app-admin{
 app-markers{
     position: absolute;
     z-index: 1;
-    top: 4rem;
+    top: 8rem;
     left: 2rem;
+}
+app-add-comp {
+    position: absolute;
+    z-index: 1;
+    top: 0rem;
+    left: 2rem;
+}
+.admin-holder {
+    margin-top:4rem;
 }

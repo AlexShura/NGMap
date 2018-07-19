@@ -13,13 +13,15 @@ import { AgmCoreModule } from '@agm/core';
 import { MapComponent } from './map/map.component';
 import { GoogleMapsAPIWrapper } from '@agm/core';
 import { MarkerManager } from '@agm/core';
+import { AddCompComponent } from './add-comp/add-comp.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MarkersComponent,
     AdminComponent,
-    MapComponent
+    MapComponent,
+    AddCompComponent
   ],
   imports: [ 
     BrowserModule,

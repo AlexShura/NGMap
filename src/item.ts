@@ -3,4 +3,6 @@ export interface Item {
     lat:number;
     lng:number;
     title:string;
+    parrentId:number;
   }
+

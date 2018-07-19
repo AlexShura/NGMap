@@ -1,0 +1,13 @@
+<form (ngSubmit)=onSubmit() name="addComp" #newComp="ngForm">
+    <label>Comp:</label> 
+       <input [(ngModel)]='item.name' placeholder="name" name="name">
+    <input type="submit" value="submit">
+</form>
+<!-- <div *ngIf="items?.length > 0;else noItems">
+    <ul *ngFor="let item of items" class="collection">  
+      <li>{{ [item.name, item.id] }}</li>
+    </ul>
+  </div>
+  <ng-template #noItems>
+    <h5>There no items</h5>
+  </ng-template> -->
